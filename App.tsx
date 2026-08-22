@@ -767,7 +767,7 @@ export default function App() {
           </button>
 
           {/* Desktop links */}
-          <ul className="hidden flex-1 items-center justify-end gap-4 xl:flex 2xl:gap-5">
+          <ul className="hidden flex-1 items-center justify-end gap-4 2xl:flex 2xl:gap-5">
             {NAV_LINKS.map((l) => (
               <li key={l.href}>
                 <button
@@ -795,7 +795,7 @@ export default function App() {
 
           {/* Mobile hamburger */}
           <button
-            className="lg:hidden p-2 text-primary-foreground/80 hover:text-primary-foreground"
+            className="2xl:hidden p-2 text-primary-foreground/80 hover:text-primary-foreground"
             onClick={() => setMenuOpen(!menuOpen)}
           >
             {menuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -804,7 +804,7 @@ export default function App() {
 
         {/* Mobile menu */}
         {menuOpen && (
-          <div className="lg:hidden bg-primary border-t border-white/10 px-6 py-4 flex flex-col gap-3">
+          <div className="2xl:hidden bg-primary border-t border-white/10 px-6 py-4 flex flex-col gap-3">
             {NAV_LINKS.map((l) => (
               <button
                 key={l.href}
