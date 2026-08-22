@@ -17,14 +17,8 @@
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
-      "@/*": ["*"]
+      "@/*": ["src/*"]
     }
   },
-  "include": [
-    "main.tsx",
-    "App.tsx",
-    "ImageWithFallback.tsx",
-    "vite-env.d.ts",
-    "vite.config.ts"
-  ]
+  "include": ["src", "vite.config.ts"]
 }

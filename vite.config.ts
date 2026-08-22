@@ -10,8 +10,9 @@ function figmaAssetResolver() {
     resolveId(id: string) {
       if (id.startsWith('figma:asset/')) {
         const filename = id.replace('figma:asset/', '')
-        return path.resolve(__dirname, filename)
+        return path.resolve(__dirname, 'src/assets', filename)
       }
+      return null
     },
   }
 }
@@ -26,8 +27,8 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      // Source files are stored at the repository root.
-      '@': path.resolve(__dirname, '.'),
+      // Alias @ to the src directory
+      '@': path.resolve(__dirname, './src'),
     },
   },
 

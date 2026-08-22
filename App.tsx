@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { ImageWithFallback } from "./ImageWithFallback";
-import collegeLogo from "./image.png";
-import collegePhoto from "./school_two.jpg";
+import { ImageWithFallback } from "@/app/components/figma/ImageWithFallback";
+import collegeLogo from "@/imports/image.png";
+import collegePhoto from "@/imports/school_two.jpg";
 import {
   GraduationCap,
   BookOpen,
